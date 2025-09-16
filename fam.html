@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Trips - Dream Voyage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Black background */
+      color: #f4c542; /* Yellow text */
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #f4c542;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      color: #f4c542;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .trip-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .trip-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(255, 255, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .trip-card:hover {
+      transform: scale(1.05);
+    }
+
+    .trip-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .trip-content {
+      padding: 15px;
+    }
+
+    .trip-content h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .trip-content p {
+      margin: 0 0 15px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #f4c542;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffdd44;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #111;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #888;
+    }
+    /* 🌐 Mobile Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .slides img {
+    height: 200px;
+  }
+
+  .prev, .next {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .trip-container {
+    grid-template-columns: 1fr; /* one card per row */
+    padding: 10px;
+  }
+
+  .trip-card img {
+    height: 150px;
+  }
+
+  .trip-content h2 {
+    font-size: 18px;
+  }
+
+  .trip-content p {
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .slides img {
+    height: 160px;
+  }
+
+  .trip-content h2 {
+    font-size: 16px;
+  }
+
+  .trip-content p {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dream Voyage - Family Trips</h1>
+  </header>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="photoes/photo20.jpg" loading="lazy" alt="Family Travel">
+      <img src="photoes/photo11.jpg"  loading="lazy" alt="Beach Trip">
+      <img src="photoes/photo1.jpg" loading="lazy" alt="Mountain Adventure">
+      
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+  </div>
+
+  <!-- Trip Packages -->
+  <div class="trip-container">
+    <div class="trip-card">
+      <img src="photoes/photo4.jpg" alt="Goa">
+      <div class="trip-content">
+        <h2>Goa Family Getaway</h2>
+        <p>4 Days & 3 Nights - Enjoy beaches, fun, and family activities.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="photoes/photo12.jpg"  loading="lazy"alt="Kerala">
+      <div class="trip-content">    
+        <h2>Kerala Backwaters</h2>
+        <p>5 Days & 4 Nights - Houseboats, greenery, and Ayurvedic relaxation.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="photoes/photo19.jpg" loading="lazy" alt="Ooty">
+      <div class="trip-content">
+        <h2>Ooty Hill Station</h2>
+        <p>3 Days & 2 Nights - Scenic hills, gardens, and toy train rides.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="trip-card">
+      <img src="photoes/photo18.jpg" loading="lazy"  alt="Rajasthan">
+      <div class="trip-content">
+        <h2>Royal Rajasthan</h2>
+        <p>6 Days & 5 Nights - Explore palaces, forts, and desert safaris.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Dream Voyage. All Rights Reserved.</p>
+  </footer>
+
+ 
+
+</body>
+</html>
+    

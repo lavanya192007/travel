@@ -1,0 +1,160 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now - DreamVoyage</title>
+  <link rel="stylesheet" href="booknow.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">DreamVoyage</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="package.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Booking Details -->
+  <section class="booking">
+    <h1>Beach Paradise Package</h1>
+    <p><strong>Duration:</strong> 3 Nights | 4 Days</p>
+    <p><strong>Price:</strong> ₹14,999 per person</p>
+    
+    <h2>What’s Included</h2>
+    <ul>
+      <li>✔️ Flight tickets (round trip)</li>
+      <li>✔️ 4-star hotel accommodation</li>
+      <li>✔️ Breakfast and Dinner</li>
+      <li>✔️ Sightseeing tours</li>
+      <li>✔️ Local transport</li>
+    </ul>
+
+    <h2>Itinerary</h2>
+    <ol>
+      <li>Day 1: Arrival, check-in, and beach relaxation</li>
+      <li>Day 2: Island tour + water sports</li>
+      <li>Day 3: City tour + shopping</li>
+      <li>Day 4: Checkout and return flight</li>
+    </ol>
+
+    <!-- Booking Button -->
+    <div class="payment">
+      <h2>Ready to Book?</h2>
+      <button class="btn" onclick="payNow()">Pay ₹14,999</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DreamVoyage. All rights reserved.</p>
+  </footer>
+  <style>
+    /* Basic Reset */
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 15px 20px;
+}
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Booking Section */
+.booking {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.booking h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+.booking h2 {
+  margin-top: 20px;
+  color: #023e8a;
+}
+.booking ul, .booking ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* Payment Button */
+.payment {
+  margin-top: 30px;
+  text-align: center;
+}
+.btn {
+  background: #0077b6;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #023e8a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #0077b6;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .booking {
+    margin: 20px;
+    padding: 20px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+    </style>
+
+  <script>
+    // Payment simulation (replace later with Razorpay/PayPal/Stripe)
+    function payNow() {
+      alert("Redirecting to secure payment gateway...");
+      // Example redirect (when you integrate real payment)
+      // window.location.href = "https://rzp.io/i/your-payment-link";
+    }
+  </script>
+</body>
+</html>

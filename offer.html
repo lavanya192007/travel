@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offers - Dream Voyage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* black background */
+      color: #f4c542; /* yellow text */
+    }
+
+    header {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #f4c542;
+    }
+
+    .offers-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .offer-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(255, 255, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: scale(1.05);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .offer-content {
+      padding: 15px;
+    }
+
+    .offer-content h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .offer-content p {
+      margin: 0 0 15px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #f4c542;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ffdd44;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #111;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin: 0;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dream Voyage - Special Offers</h1>
+  </header>
+
+  <div class="offers-container">
+    <!-- Offer 1 -->
+    <div class="offer-card">
+      <img src="photoes/photo18.jpg"  loading="lazy"  alt="Goa" width="400px" height="200px">
+      <div class="offer-content">
+        <h2>Goa Beach Escape</h2>
+        <p>4 Days & 3 Nights - Relax on beaches, parties, and water sports.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-card">
+      <img src="photoes/photo17.jpg"   loading="lazy" alt="Kashmir" width="400px" height="200px">
+      <div class="offer-content">
+        <h2>Kashmir Paradise</h2>
+        <p>6 Days & 5 Nights - Explore valleys, snow peaks, and shikara rides.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="offer-card">
+      <img src="photoes/photo16.jpg" loading="lazy" alt="Rajasthan" width="400px" height="200px">
+      <div class="offer-content">
+        <h2>Royal Rajasthan</h2>
+        <p>6 Days & 5 Nights - Palaces, forts, and desert camel safari.</p>
+        <a href="booknow.html" class="btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Dream Voyage. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
